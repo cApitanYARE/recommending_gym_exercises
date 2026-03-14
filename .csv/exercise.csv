@@ -1,0 +1,50 @@
+exercise_id,name,muscle_group,experience
+1,biceps curl,biceps,beginner
+2,incline curl,biceps,intermediate
+3,machine curls,biceps,beginner
+4,barbell curl,biceps,intermediate
+5,cable biceps curl,biceps,beginner
+6,rope pushdown,triceps,beginner
+7,weighted dips,triceps,advanced
+8,cable triceps extension,triceps,beginner
+9,close-grip bench press,triceps,intermediate
+10,French Press,triceps,intermediate
+11,Front Dumbbell Raises,Front Delts,beginner
+12,Standing Barbell Press,Front Delts,intermediate
+13,Upright Row,Front Delts,intermediate
+14,Side Lateral Raises,Middle Delts,beginner
+15,Cable Lateral Raises,Middle Delts,beginner
+16,Reverse Pec Deck Fly,Rear Delts,beginner
+17,Seated Bent-Over Raises,Rear Delts,intermediate
+18,Cable face pull,Rear Delts,beginner
+19,Pull-Ups,Back_Latissimus Dorsi,intermediate
+20,Lat Pulldown,Back_Latissimus Dorsi,beginner
+21,Bent-Over Barbell Row,Back_Latissimus Dorsi,intermediate
+22,Single-Arm Dumbbell Row,Back_Latissimus Dorsi,beginner
+23,Cable Pullover,Back_Latissimus Dorsi,intermediate
+24,T-Bar Row,Back_Latissimus Dorsi,advanced
+25,Shrugs,Back_Trapezius,beginner
+26,Seated Cable Row,Rhomboids,beginner
+27,Bench Press,chest_base,intermediate
+28,Dumbbell Bench Press,chest_base,beginner
+29,Chest Press Machine,chest_base,beginner
+30,Incline Bench Press,chest_up,intermediate
+31,Incline Dumbbell Press,chest_up,intermediate
+32,Low Cable Fly,chest_up,beginner
+33,Dumbbell Fly,chest_mid,intermediate
+34,Cable Crossover,chest_mid,beginner
+35,Lying Cable Chest Press,chest_mid,intermediate
+36,Decline Bench Press,chest_low,intermediate
+37,High Cable Fly,chest_low,beginner
+38,dips,chest_low,intermediate
+39,Squats,Legs_front,intermediate
+40,Leg Press,Legs_front,beginner
+41,Hack Squa,Legs_front,intermediate
+42,Leg Extension,Legs_front,beginner
+43,Romanian Deadlift,Legs_Hamstrings,intermediate
+44,Leg Curl,Legs_Hamstrings,beginner
+45,Good Morning,Legs_Hamstrings,advanced
+46,Hip Thrust,Legs_Glutes,intermediate
+47,Glute Bridge,Legs_Glutes,beginner
+48,Cable Kickbacks,Legs_Calves,beginner
+49,Standing Calf Raise,Legs_Glutes,beginner
