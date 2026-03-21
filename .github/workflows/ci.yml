@@ -1,0 +1,20 @@
+stages:
+  - build
+  - test
+  - deploy
+
+build-job:
+  stage: build
+  script:
+    - echo "Building..."
+    - docker build -t recomendexercises_gym-api .
+
+test-job:
+  stage: test
+  script:
+    - docker run --rm recomendexercises_gym-api pytest -s -v
+
+deploy-job:
+  stage: deploy
+  script:
+    - docker compose up -d
