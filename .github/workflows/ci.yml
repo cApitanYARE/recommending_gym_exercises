@@ -43,22 +43,19 @@ jobs:
       - name: Load Docker image
         run: docker load -i image.tar
 
-      - name: Debug - show structure
+      - name: Install test dependencies
         run: |
-          echo "=== Structure in runner ==="
-          ls -la
-          echo "=== Tests directory ==="
-          ls -la tests/
-          echo "=== Content of tests ==="
-          cat tests/integration_tests.py | head -20
+          docker run --rm \
+            recomendexercises_gym-api \
+            pip install pytest-asyncio httpx
 
       - name: Run tests
         run: |
           docker run --rm \
-            -v $(pwd):/app \
-            -w /app \
+            -v $(pwd):/workspace \
+            -w /workspace \
             recomendexercises_gym-api \
-            pytest tests/integration_tests.py tests/unit_tests.py -v
+            sh -c "pip install pytest-asyncio httpx && PYTHONPATH=/workspace pytest tests/integration_tests.py tests/unit_tests.py -v"
 
   deploy:
     runs-on: ubuntu-latest
