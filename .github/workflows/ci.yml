@@ -43,13 +43,22 @@ jobs:
       - name: Load Docker image
         run: docker load -i image.tar
 
+      - name: Debug - show structure
+        run: |
+          echo "=== Structure in runner ==="
+          ls -la
+          echo "=== Tests directory ==="
+          ls -la tests/
+          echo "=== Content of tests ==="
+          cat tests/integration_tests.py | head -20
+
       - name: Run tests
         run: |
           docker run --rm \
             -v $(pwd):/app \
             -w /app \
             recomendexercises_gym-api \
-            pytest tests/ -v
+            pytest tests/integration_tests.py tests/unit_tests.py -v
 
   deploy:
     runs-on: ubuntu-latest
