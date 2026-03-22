@@ -1,20 +1,47 @@
-stages:
-  - build
-  - test
-  - deploy
+name: CI/CD
 
-build-job:
-  stage: build
-  script:
-    - echo "Building..."
-    - docker build -t recomendexercises_gym-api .
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
 
-test-job:
-  stage: test
-  script:
-    - docker run --rm recomendexercises_gym-api pytest -s -v
+jobs:
+  build:
+    runs-on: ubuntu-latest
 
-deploy-job:
-  stage: deploy
-  script:
-    - docker compose up -d
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Build Docker image
+        run: docker build -t recomendexercises_gym-api ./back
+
+  test:
+    runs-on: ubuntu-latest
+    needs: build
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Run tests in Docker with dependencies
+        run: |
+          docker run --rm \
+            -v $(pwd)/tests:/app/tests \
+            -v $(pwd)/back:/app/back \
+            -v $(pwd)/requirements.txt:/app/requirements.txt \
+            recomendexercises_gym-api \
+            sh -c "pip install pytest pytest-asyncio httpx && pytest tests/ -v --asyncio-mode=auto"
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: test
+    if: github.ref == 'refs/heads/main'
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Deploy with Docker Compose
+        run: docker compose up -d
