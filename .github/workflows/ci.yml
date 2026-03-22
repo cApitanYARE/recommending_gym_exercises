@@ -46,10 +46,11 @@ jobs:
       - name: Run tests
         run: |
           docker run --rm \
-            -v $(pwd)/tests:/code/tests \
+            -v $(pwd):/app \
+            -w /app \
             recomendexercises_gym-api \
             pytest tests/ -v
-            
+
   deploy:
     runs-on: ubuntu-latest
     needs: test
