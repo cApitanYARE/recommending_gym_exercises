@@ -11,16 +11,16 @@ import pickle
 
 app = FastAPI()
 
-with open('model/model.pkl', 'rb') as f:
+with open('back/model/model.pkl', 'rb') as f:
     model = pickle.load(f)
 
-df_ctgan_gym = pd.read_csv(r"D:/python/pyProj/recomendExercises_gym/.csv/juputer_notebook/.csv/ctgan_gym.xls")
-df_program_detail = pd.read_csv("D:\python\pyProj/recomendExercises_gym/.csv/data_users_programs/workout_programs.csv")
+df_ctgan_gym = pd.read_csv(".csv/juputer_notebook/.csv/ctgan_gym.xls")
+df_program_detail = pd.read_csv(".csv/data_users_programs/workout_programs.csv")
 
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://127.0.0.1:5500", "http://localhost:5500"],
+    allow_origins=["*"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -111,5 +111,5 @@ async def recommend(data: UserData):
     return [recommendations, data_by_program]
     
 
-if __name__ == "__main__":
-    uvicorn.run("api:app", host="127.0.0.1", port=8000, reload=True)
+#if __name__ == "__main__":
+#    uvicorn.run("api:app", host="127.0.0.1", port=8000, reload=True)
