@@ -26,13 +26,13 @@ async def test_recommend_logic_no_similar_users():
     from back.api import recommend, UserData
 
     fake_df = pd.DataFrame({
-        "age": [50],
-        "gender": [1],
-        "experience_numeric": [3],
-        "days_per_week": [6],
-        "goal": [4],
-        "program_name": [1,2,3],
-        "rating": [5,4,3]
+        "age": [50, 50, 50],
+        "gender": [1, 1, 1],
+        "experience_numeric": [3, 3, 3],
+        "days_per_week": [6, 6, 6],
+        "goal": [4, 4, 4],
+        "program_name": [1, 2, 3],
+        "rating": [5, 4, 3]
     })
 
     with patch("back.api.df_ctgan_gym", fake_df):
