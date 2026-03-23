@@ -1,4 +1,7 @@
 import pytest
+from unittest.mock import patch
+import pandas as pd
+from unittest.mock import MagicMock
 
 def test_map_experience():
     from back.api import map_experience
@@ -17,9 +20,6 @@ def test_map_goal():
     assert map_goal("strength") == 4
     assert map_goal("random") == 1  # default
 
-
-from unittest.mock import patch
-import pandas as pd
 
 @pytest.mark.asyncio
 async def test_recommend_logic_no_similar_users():
