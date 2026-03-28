@@ -36,12 +36,9 @@ WORKDIR /code
 
 RUN apk add --no-cache libgomp libstdc++
 
-# Копіюємо Python пакети
 COPY --from=builder /usr/local/lib/python3.10/site-packages /usr/local/lib/python3.10/site-packages
-# Копіюємо виконувані файли (включаючи uvicorn)
 COPY --from=builder /usr/local/bin /usr/local/bin
 
-# Очищаємо зайві файли
 RUN set -ex && \
     cd /usr/local/lib/python3.10/site-packages && \
     find . -type d \( -name "test*" -o -name "*test" -o -name "tests" \) -exec rm -rf {} + 2>/dev/null || true && \
@@ -56,19 +53,15 @@ RUN set -ex && \
     rm -rf matplotlib/tests matplotlib/mpl-data/sample_data 2>/dev/null || true && \
     find . -name "*.so" -exec strip --strip-all {} \; 2>/dev/null || true && \
     find . -name "*.py" -size +500k -exec rm -f {} \; 2>/dev/null || true && \
-    rm -rf pip* setuptools* wheel* *dist-info 2>/dev/null || true && \
+    rm -rf $(find . -type d -name "*dist-info" ! -name "pip*") 2>/dev/null || true && \
     find . -name "*.pyi" -delete 2>/dev/null || true && \
     cd /
 
-# Копіюємо файли додатку
 COPY api.py .
 COPY model/ model/
 
-
-# Очищаємо __pycache__
 RUN find . -type d -name "__pycache__" -exec rm -rf {} + 2>/dev/null || true
 
-# Перевіряємо, що uvicorn доступний
 RUN which uvicorn || (echo "uvicorn not found in PATH" && exit 1)
 
 EXPOSE 8000
