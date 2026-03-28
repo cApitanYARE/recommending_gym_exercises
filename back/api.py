@@ -11,11 +11,11 @@ import pickle
 
 app = FastAPI()
 
-with open('back/model/model.pkl', 'rb') as f:
+with open('model/model.pkl', 'rb') as f:
     model = pickle.load(f)
 
-df_ctgan_gym = pd.read_csv(".csv/juputer_notebook/.csv/ctgan_gym.xls")
-df_program_detail = pd.read_csv(".csv/data_users_programs/workout_programs.csv")
+df_ctgan_gym = pd.read_csv("csv/jupyter_notebook/ctgan_gym.xls")
+df_program_detail = pd.read_csv("csv/data_users_programs/workout_programs.csv")
 
 
 app.add_middleware(
