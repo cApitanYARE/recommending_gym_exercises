@@ -14,8 +14,22 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
+      - name: Cache Docker layers
+        uses: actions/cache@v3
+        with:
+          path: /tmp/.docker-cache
+          key: ${{ runner.os }}-docker-${{ hashFiles('back/**') }}
+          restore-keys: |
+            ${{ runner.os }}-docker-
+
       - name: Build Docker image
-        run: docker build -t recomendexercises_gym-api ./back
+        run: |
+          docker build \
+            --cache-from=type=local,src=/tmp/.docker-cache \
+            --tag recomendexercises_gym-api \
+            ./back
+          mkdir -p /tmp/.docker-cache
+          docker save recomendexercises_gym-api | tar -C /tmp/.docker-cache -xf -
 
       - name: Save Docker image
         run: docker save recomendexercises_gym-api -o image.tar
@@ -63,7 +77,7 @@ jobs:
     if: github.ref == 'refs/heads/main'
 
     steps:
-      - name: Checkout code
+      - name: Checkout 
         uses: actions/checkout@v4
 
       - name: Download Docker image
