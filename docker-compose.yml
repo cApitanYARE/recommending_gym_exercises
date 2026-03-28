@@ -19,7 +19,7 @@ services:
       context: ./back
     volumes:
     - ./back/model:/code/back/model
-    - ./.csv:/code/.csv
+    - ./csv:/code/csv
     networks:
     - dev
   

@@ -1,0 +1,10 @@
+program_id,program_name,program_type,days_per_week,difficulty_level
+1,Full Body A,Full Body,3,beginner
+2,Full Body B,Full Body,3,beginner
+3,Full Body C,Full Body,3,intermediate
+4,Upper/Lower A,Upper/Lower,4,intermediate
+5,Upper/Lower B,Upper/Lower,4,intermediate
+6,PPL A,PPL,6,advanced
+7,PPL B,PPL,6,advanced
+8,Body Part A,Brody Split,5,advanced
+9,Body Part B,Brody Split,5,advanced
