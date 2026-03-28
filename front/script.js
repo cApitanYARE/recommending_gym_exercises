@@ -8,11 +8,13 @@ async function recommend(name,age,gender,experience,goal,days_per_week) {
         days_per_week: days_per_week
     };
 
-    const response = await fetch('http://localhost:8000/recommend', {
+    const response = await fetch('/api/recommend', {
         method: "POST",
         headers: {"Content-Type": "application/json"},
         body: JSON.stringify(userData)
     })
+
+    let zero = 0;
 
     const data = await response.json();
 
@@ -372,7 +374,6 @@ function downloadProgramAsPDF(program, exercisesData) {
     printWindow.focus();
     printWindow.print();
 }
-
 
 function btn_confirm_form(){
     const div = document.getElementById('form');
