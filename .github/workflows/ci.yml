@@ -58,7 +58,7 @@ jobs:
             -v $(pwd):/workspace \
             -w /workspace \
             recomendexercises_gym-api \
-            sh -c "pip install pytest pytest-asyncio httpx && PYTHONPATH=/code pytest tests/integration_tests.py tests/unit_tests.py -v"
+            sh -c "pip install pytest pytest-asyncio httpx && PYTHONPATH=/workspace pytest tests/integration_tests.py tests/unit_tests.py -v"
 
   deploy:
     runs-on: ubuntu-latest
