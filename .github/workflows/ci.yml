@@ -2,9 +2,9 @@ name: CI/CD
 
 on:
   push:
-    branches: [ "main" ]
+    branches: ["main"]
   pull_request:
-    branches: [ "main" ]
+    branches: ["main"]
 
 jobs:
   build:
@@ -15,18 +15,19 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Set up Docker Buildx
-            uses: docker/setup-buildx-action@v3
+        uses: docker/setup-buildx-action@v3
 
-          - name: Build Docker image with cache
-            uses: docker/build-push-action@v5
-            with:
-              context: ./back
-              load: true
-              tags: recomendexercises_gym-api
-              cache-from: type=gha
-              cache-to: type=gha,mode=max
-            - name: Save Docker image
-              run: docker save recomendexercises_gym-api -o image.tar
+      - name: Build Docker image with cache
+        uses: docker/build-push-action@v5
+        with:
+          context: ./back
+          load: true
+          tags: recomendexercises_gym-api
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+
+      - name: Save Docker image
+        run: docker save recomendexercises_gym-api -o image.tar
 
       - name: Upload Docker image
         uses: actions/upload-artifact@v4
@@ -71,7 +72,7 @@ jobs:
     if: github.ref == 'refs/heads/main'
 
     steps:
-      - name: Checkout 
+      - name: Checkout
         uses: actions/checkout@v4
 
       - name: Download Docker image
