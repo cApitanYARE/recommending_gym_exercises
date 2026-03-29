@@ -55,7 +55,7 @@ jobs:
       - name: Run tests
         run: |
           docker run --rm \
-            -v $(pwd)/tests:/workspace/tests \
+            -v $(pwd):/workspace \
             -w /workspace \
             recomendexercises_gym-api \
             sh -c "pip install pytest pytest-asyncio httpx && PYTHONPATH=/code pytest tests/integration_tests.py tests/unit_tests.py -v"
