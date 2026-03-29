@@ -52,19 +52,13 @@ jobs:
       - name: Load Docker image
         run: docker load -i image.tar
 
-      - name: Install test dependencies
-        run: |
-          docker run --rm \
-            recomendexercises_gym-api \
-            pip install pytest-asyncio httpx
-
       - name: Run tests
         run: |
           docker run --rm \
             -v $(pwd)/tests:/workspace/tests \
             -w /workspace \
             recomendexercises_gym-api \
-            sh -c "PYTHONPATH=/code pytest tests/integration_tests.py tests/unit_tests.py -v"
+            sh -c "pip install pytest pytest-asyncio httpx && PYTHONPATH=/code pytest tests/integration_tests.py tests/unit_tests.py -v"
 
   deploy:
     runs-on: ubuntu-latest
