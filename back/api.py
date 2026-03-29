@@ -7,11 +7,12 @@ from fastapi.middleware.cors import CORSMiddleware
 import uvicorn
 
 import pickle
-
+import os
 
 app = FastAPI()
 
-with open('model/model.pkl', 'rb') as f:
+MODEL_PATH = os.path.join(os.path.dirname(__file__), "model/model.pkl") 
+with open(MODEL_PATH, "rb") as f:
     model = pickle.load(f)
 
 df_ctgan_gym = pd.read_csv("csv/jupyter_notebook/ctgan_gym.xls")

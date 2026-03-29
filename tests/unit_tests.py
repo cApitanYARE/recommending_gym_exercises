@@ -1,7 +1,12 @@
 import pytest
-from unittest.mock import patch
+from unittest.mock import MagicMock ,patch
 import pandas as pd
-from unittest.mock import MagicMock
+
+fake_model = MagicMock()
+fake_model.predict.return_value = 4.5
+
+from back.api import recommend, UserData
+
 
 def test_map_experience():
     from back.api import map_experience
@@ -9,7 +14,7 @@ def test_map_experience():
     assert map_experience("beginner") == 1
     assert map_experience("intermediate") == 2
     assert map_experience("advanced") == 3
-    assert map_experience("unknown") == 1  # default
+    assert map_experience("unknown") == 1  
 
 def test_map_goal():
     from back.api import map_goal
@@ -20,10 +25,8 @@ def test_map_goal():
     assert map_goal("strength") == 4
     assert map_goal("random") == 1  # default
 
-
 @pytest.mark.asyncio
 async def test_recommend_logic_no_similar_users():
-    from back.api import recommend, UserData
 
     fake_df = pd.DataFrame({
         "age": [50, 50, 50],
@@ -54,10 +57,7 @@ async def test_recommend_logic_no_similar_users():
 
 @pytest.mark.asyncio
 async def test_model_used_in_recommend():
-    from back.api import recommend, UserData
-
-    fake_model = MagicMock()
-    fake_model.predict.return_value.est = 4.5
+    from types import SimpleNamespace
 
     fake_df = pd.DataFrame({
         "age": [22, 23],
@@ -68,6 +68,9 @@ async def test_model_used_in_recommend():
         "program_name": [1, 2],
         "rating": [5, 4]
     })
+
+    fake_model = MagicMock()
+    fake_model.predict.return_value = SimpleNamespace(est=4.5)
 
     with patch("back.api.model", fake_model):
         with patch("back.api.df_ctgan_gym", fake_df):
@@ -91,4 +94,3 @@ async def test_model_used_in_recommend():
             assert recommendations[0]["source"] == "similar"
             assert "predicted_rating" in recommendations[0] 
             assert recommendations[0]["predicted_rating"] == 4.5
-
