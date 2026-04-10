@@ -16,7 +16,7 @@ with open(MODEL_PATH, "rb") as f:
     model = pickle.load(f)
 
 df_ctgan_gym = pd.read_csv("csv/jupyter_notebook/ctgan_gym.xls")
-df_program_detail = pd.read_csv("csv/data_users_programs/workout_programs.csv")
+df_program_detail = pd.read_csv("csv/data_users_programs/workouts.csv")
 
 
 app.add_middleware(
@@ -42,12 +42,20 @@ def map_experience(exp_str: str) -> int:
 
 def map_goal(goal_str) -> int:
     goal_map = {
-        'mass': 1,
-        'weight_loss': 2,
-        'toning': 3,
-        'strength':4
+        'mass': 0,
+        'toning': 1,
+        'strength': 2,
+        'weight_loss':3
     }
     return goal_map.get(goal_str.lower(), 1)
+
+def map_location(loc_str: str) -> int:
+    location_map = {
+        'gym' : 0,
+        'home' : 1,
+        'street' : 2,
+    }
+    return location_map.get(loc_str.lower(), 0)
 
 class UserData(BaseModel):
     name: str
@@ -56,61 +64,78 @@ class UserData(BaseModel):
     experience: str
     goal: str
     days_per_week: int
+    location: str
 
-@app.post("/recommend"
-          ,summary='Text sentiment prediction',
-          description = 'Takes a data and returns the recommend of a gym exercises',
-          response_description= 'recommend gym exercises')
+@app.post("/recommend")
 async def recommend(data: UserData):
     gender_num = 1 if data.gender.lower() == 'male' else 0
     experience_num = map_experience(data.experience)
     goal = map_goal(data.goal)
+    location = data.location.lower()
+
+    temp_user_df = pd.DataFrame([{
+        'age': data.age,
+        'gender': gender_num,
+        'experience_numeric': experience_num,
+        'days_per_week': data.days_per_week,
+        'goal': goal, 
+        'location': location
+    }])
     
-    df_ctgan_gym['user_id'] = df_ctgan_gym.groupby(['age', 'gender', 'experience_numeric', 'days_per_week', 'goal']).ngroup()
-    similar_users = df_ctgan_gym[
-        (abs(df_ctgan_gym['age'] - data.age) <= 5) &
-        (df_ctgan_gym['gender'] == gender_num) &
-        (abs(df_ctgan_gym['experience_numeric'] - experience_num) <= 1) &
-        (abs(df_ctgan_gym['days_per_week'] - data.days_per_week) <= 1) &
-        (abs(df_ctgan_gym['goal'] - goal) <= 1)
-    ]['user_id'].unique()
-
-    if len(similar_users) > 0:
-        user_id = int(similar_users[0])
-        source = 'similar'
-    else:
-        popular = df_ctgan_gym.groupby('program_name')['rating'].mean().sort_values(ascending=False).head(3)
-        recommendations = []
-        for prog, rating in popular.items():
-            recommendations.append({
-                "program": str(prog),     
-                "rating": float(rating),   
-                "source": "popular"
-            })
-        return recommendations
-
-    valid_programs = [int(id_program) for id_program in df_ctgan_gym['program_name'].unique() if 1 <= id_program <= 9]
-
-    user_rated = df_ctgan_gym[df_ctgan_gym['user_id'] == user_id]['program_name'].unique()
-
-    predictions = [(p, float(model.predict(user_id, p).est)) 
-               for p in valid_programs if p not in user_rated]
-
+    temp_user_df['user_id'] = temp_user_df.groupby(
+        ['age', 'gender', 'experience_numeric', 'days_per_week', 'goal', 'location']
+    ).ngroup()
+    
+    user_id = int(temp_user_df['user_id'].iloc[0])
+    
+    print(f"Generated user_id: {user_id}")  
+    print(f"User data: age={data.age}, gender={gender_num}, experience={experience_num}, days={data.days_per_week}, goal={goal}, location={location}")
+    
+    available_programs = df_program_detail[
+        (df_program_detail['location'] == location) &
+        (df_program_detail['gender'] == data.gender.lower())
+    ]['program_id'].unique()
+    
+    print(f"Available programs: {available_programs}")  
+    
+    if len(available_programs) == 0:
+        print(f"No programs found for location={location}, gender={data.gender.lower()}")
+        return [[], {}]
+    
+    predictions = []
+    for program_id in available_programs:
+        try:
+            pred = float(model.predict(user_id, int(program_id)).est)
+            predictions.append((int(program_id), pred))
+            print(f"Program {program_id}: predicted rating = {pred}")
+        except Exception as e:
+            print(f"Error predicting program {program_id}: {e}")
+            predictions.append((int(program_id), 3.5))
+    
     predictions.sort(key=lambda x: x[1], reverse=True)
-                   
+    
     recommendations = []
     data_by_program = {}
-    for p, r in predictions[:3]:
-        recommendations.append({
-            "program": int(p),             
-            "predicted_rating": float(r),    
-            "source": str(source)            
-        })
-        program_exercises = df_program_detail[df_program_detail["program_id"] == int(p)]
-        data_by_program[int(p)] = program_exercises.to_dict('records')
-
-    return [recommendations, data_by_program]
     
+    for program_id, rating in predictions[:3]:
+        recommendations.append({
+            "program_num": program_id,
+            "predicted_rating": rating,
+            "location": location,
+            "gender": data.gender.lower()
+        })
+        
+        program_exercises = df_program_detail[
+            (df_program_detail["program_id"] == program_id) &
+            (df_program_detail["location"] == location) &
+            (df_program_detail["gender"] == data.gender.lower())
+        ].to_dict('records')
+        
+        data_by_program[str(program_id)] = program_exercises
+    
+    print(f"Recommendations: {recommendations}") 
+    
+    return [recommendations, data_by_program]
 
 #if __name__ == "__main__":
 #    uvicorn.run("api:app", host="127.0.0.1", port=8000, reload=True)
