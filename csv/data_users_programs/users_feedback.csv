@@ -1,101 +1,101 @@
-user_id,program_id,start_weight_kg,end_weight_kg,goal_achieved,user_rating,comments
-1,1,75,78,yes,5,"Great program, gained mass"
-2,4,65,62,yes,4,"Lost weight, but exercises were repetitive"
-3,6,80,85,yes,5,"Perfect for advanced lifters"
-4,2,70,71,no,3,"Good but wanted more variety"
-5,5,82,85,yes,5,"Increased all my lifts significantly"
-6,7,62,60,yes,4,"Good results, but hard to stick to 5 days"
-7,3,73,76,yes,4,"Solid mass builder"
-8,4,58,57,no,3,"Results were okay"
-9,6,85,90,yes,5,"Amazing strength gains"
-10,1,68,65,yes,4,"Good for beginners"
-11,5,77,80,yes,4,"Good mass program"
-12,8,55,56,no,5,"Loved the body part split"
-13,2,79,82,yes,4,"Good strength program"
-14,4,63,61,yes,3,"Too many leg days"
-15,7,72,76,yes,5,"Excellent mass builder"
-16,3,60,61,no,2,"Too intense for a beginner"
-17,5,81,84,yes,5,"Perfect for intermediate"
-18,6,64,62,yes,4,"Good results"
-19,1,71,74,yes,4,"Solid program"
-20,4,59,58,no,3,"Okay results"
-21,7,83,86,yes,5,"Very good"
-22,2,67,64,yes,4,"Good for weight loss"
-23,5,74,77,yes,4,"Good mass"
-24,9,56,57,no,5,"Great split program"
-25,3,78,80,yes,3,"Okay but tough"
-26,4,62,60,yes,4,"Lost weight consistently"
-27,6,82,87,yes,5,"Best program for mass"
-28,1,69,66,yes,4,"Good beginner program"
-29,5,76,79,yes,4,"Solid strength gains"
-30,7,61,59,yes,4,"Good for cutting"
-31,2,71,73,no,3,"Not enough volume"
-32,4,57,56,no,3,"Maintained weight"
-33,6,84,89,yes,5,"Perfect for advanced"
-34,3,64,62,yes,3,"Too difficult for beginner"
-35,5,73,76,yes,4,"Good intermediate program"
-36,9,54,55,no,4,"Enjoyed the variety"
-37,1,70,72,no,4,"Good foundation"
-38,4,60,58,yes,4,"Effective for weight loss"
-39,7,79,83,yes,5,"Amazing results"
-40,2,66,64,yes,3,"Decent program"
-41,5,75,78,yes,4,"Good strength program"
-42,6,63,61,yes,4,"Good for maintenance"
-43,3,77,79,no,3,"Too intense"
-44,4,61,59,yes,4,"Good results"
-45,6,83,88,yes,5,"Excellent program"
-46,1,67,64,yes,4,"Good for beginners"
-47,5,72,75,yes,4,"Solid gains"
-48,8,56,57,no,4,"Good variety"
-49,2,68,70,no,3,"Wanted more progress"
-50,4,59,57,yes,4,"Good weight loss"
-51,7,78,82,yes,5,"Perfect for mass"
-52,3,62,61,no,2,"Too advanced"
-53,5,74,77,yes,4,"Good program"
-54,6,65,63,yes,4,"Effective"
-55,1,69,71,no,4,"Good start"
-56,4,58,56,yes,4,"Works well"
-57,6,81,86,yes,5,"Best program"
-58,2,64,62,yes,3,"Okay program"
-59,5,73,76,yes,4,"Good gains"
-60,9,55,56,no,4,"Enjoyed it"
-61,3,76,78,no,3,"Too hard"
-62,4,60,58,yes,4,"Good results"
-63,7,77,81,yes,5,"Excellent"
-64,1,66,64,yes,4,"Good beginner"
-65,5,71,74,yes,4,"Solid program"
-66,6,62,60,yes,4,"Works well"
-67,2,69,71,no,3,"Not bad"
-68,4,57,55,yes,4,"Good for weight loss"
-69,7,75,79,yes,5,"Amazing"
-70,3,63,62,no,2,"Too much"
-71,5,70,73,yes,4,"Good program"
-72,8,54,55,no,4,"Nice variety"
-73,1,68,70,no,4,"Good foundation"
-74,4,59,57,yes,4,"Effective"
-75,6,80,85,yes,5,"Perfect"
-76,2,65,63,yes,3,"Decent"
-77,5,72,75,yes,4,"Good gains"
-78,7,61,59,yes,4,"Works well"
-79,3,74,76,no,3,"Too intense"
-80,4,58,56,yes,4,"Good results"
-81,6,79,84,yes,5,"Excellent"
-82,1,67,64,yes,4,"Good beginner"
-83,5,73,76,yes,4,"Solid"
-84,9,55,56,no,4,"Enjoyed"
-85,2,68,70,no,3,"Okay"
-86,4,60,58,yes,4,"Good"
-87,7,76,80,yes,5,"Best ever"
-88,3,62,61,no,2,"Too hard"
-89,5,71,74,yes,4,"Good program"
-90,6,63,61,yes,4,"Effective"
-91,1,69,71,no,4,"Good start"
-92,4,57,55,yes,4,"Works well"
-93,6,82,87,yes,5,"Perfect"
-94,2,64,62,yes,3,"Decent"
-95,5,74,77,yes,4,"Good"
-96,8,55,56,no,4,"Nice"
-97,3,75,77,no,3,"Tough"
-98,4,59,57,yes,4,"Good"
-99,7,78,82,yes,5,"Amazing"
-100,1,68,65,yes,4,"Good for beginners"
+user_id,program_id,start_weight_kg,end_weight_kg,goal_achieved,user_rating
+1,1,78.5,82.0,True,4.7
+2,11,68.2,64.5,True,4.5
+3,6,85.0,89.5,True,4.9
+4,11,62.0,60.5,False,3.8
+5,10,92.0,94.0,True,4.6
+6,18,70.5,66.0,True,4.4
+7,2,80.0,84.0,True,4.8
+8,12,65.0,63.5,False,3.9
+9,7,88.5,93.0,True,5.0
+10,19,64.0,62.0,True,4.2
+11,4,79.0,82.5,True,4.7
+12,20,58.5,56.0,True,4.3
+13,14,77.0,80.0,True,4.5
+14,21,66.0,63.0,True,4.4
+15,25,83.0,88.0,True,4.9
+16,22,60.0,58.5,False,3.7
+17,15,76.5,79.0,True,4.6
+18,23,69.0,64.5,True,4.5
+19,17,82.0,86.0,True,4.8
+20,27,63.0,61.0,False,3.6
+21,26,90.0,94.5,True,4.9
+22,30,67.5,64.0,True,4.3
+23,16,84.0,88.0,True,4.7
+24,28,62.0,60.0,False,3.8
+25,3,75.0,79.0,True,4.6
+26,13,68.0,65.5,True,4.4
+27,8,89.0,94.0,True,5.0
+28,12,61.0,59.5,False,3.5
+29,9,86.0,90.5,True,4.8
+30,18,71.0,66.5,True,4.6
+31,1,79.0,82.5,True,4.7
+32,19,60.5,58.5,False,3.8
+33,6,87.0,91.5,True,4.9
+34,20,59.0,57.0,True,4.2
+35,4,80.0,83.5,True,4.7
+36,21,64.0,61.5,True,4.4
+37,14,76.0,79.0,True,4.5
+38,22,65.5,63.0,True,4.3
+39,25,84.0,89.0,True,4.9
+40,23,62.5,59.0,True,4.5
+41,17,81.0,85.0,True,4.8
+42,27,66.0,63.5,False,3.7
+43,26,91.0,95.5,True,5.0
+44,30,68.0,65.0,True,4.3
+45,16,85.0,89.0,True,4.7
+46,28,61.5,59.0,False,3.6
+47,3,77.5,81.5,True,4.6
+48,13,67.0,64.5,True,4.4
+49,2,78.0,82.0,True,4.7
+50,11,65.0,62.0,True,4.5
+51,7,86.0,91.0,True,4.9
+52,12,60.0,58.5,False,3.8
+53,5,82.0,85.0,True,4.6
+54,18,72.0,67.0,True,4.5
+55,15,77.0,80.0,True,4.6
+56,19,62.0,60.0,False,3.7
+57,14,79.0,82.0,True,4.5
+58,20,61.0,59.0,True,4.2
+59,21,68.0,65.5,True,4.4
+60,22,64.0,61.5,True,4.3
+61,23,75.0,71.0,True,4.5
+62,27,67.0,64.0,False,3.6
+63,25,88.0,93.0,True,4.9
+64,28,60.5,58.0,False,3.7
+65,30,69.0,66.0,True,4.3
+66,16,83.0,87.0,True,4.7
+67,1,79.5,83.0,True,4.8
+68,11,64.5,61.5,True,4.5
+69,6,86.5,91.0,True,4.9
+70,13,68.5,65.5,True,4.4
+71,4,80.5,84.0,True,4.7
+72,12,63.0,61.0,False,3.8
+73,2,76.0,80.0,True,4.7
+74,3,70.0,73.5,True,4.6
+75,8,90.0,95.0,True,5.0
+76,9,64.0,66.5,True,4.5
+77,5,83.0,86.0,True,4.6
+78,10,91.0,93.5,True,4.8
+79,15,78.0,81.0,True,4.6
+80,14,65.0,67.5,True,4.4
+81,17,84.0,88.0,True,4.8
+82,22,61.0,58.5,False,3.5
+83,26,87.0,91.5,True,4.9
+84,23,62.5,59.0,True,4.5
+85,27,70.0,67.0,False,3.7
+86,28,59.5,57.0,False,3.6
+87,30,68.0,65.0,True,4.3
+88,19,61.5,59.5,False,3.8
+89,20,74.0,71.5,True,4.2
+90,21,65.0,62.0,True,4.4
+91,16,86.0,90.5,True,4.8
+92,18,69.0,64.0,True,4.6
+93,14,78.0,81.0,True,4.5
+94,22,62.0,59.5,False,3.6
+95,25,89.0,94.0,True,5.0
+96,27,64.5,61.5,False,3.7
+97,28,67.0,64.5,False,3.8
+98,11,63.5,60.5,True,4.5
+99,7,87.0,92.0,True,4.9
+100,12,61.0,59.0,False,3.5
