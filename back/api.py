@@ -15,9 +15,10 @@ MODEL_PATH = os.path.join(os.path.dirname(__file__), "model/model.pkl")
 with open(MODEL_PATH, "rb") as f:
     model = pickle.load(f)
 
-df_ctgan_gym = pd.read_csv("csv/jupyter_notebook/ctgan_gym.xls")
-df_program_detail = pd.read_csv("csv/data_users_programs/workouts.csv")
+ROOT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
+df_ctgan_gym = pd.read_csv(os.path.join(ROOT_DIR, "csv/jupyter_notebook/ctgan_gym.xls"))
+df_program_detail = pd.read_csv(os.path.join(ROOT_DIR, "csv/data_users_programs/workouts.csv"))
 
 app.add_middleware(
     CORSMiddleware,
