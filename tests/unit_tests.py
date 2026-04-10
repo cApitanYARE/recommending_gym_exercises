@@ -19,11 +19,11 @@ def test_map_experience():
 def test_map_goal():
     from back.api import map_goal
 
-    assert map_goal("mass") == 1
-    assert map_goal("weight_loss") == 2
-    assert map_goal("toning") == 3
-    assert map_goal("strength") == 4
-    assert map_goal("random") == 1  # default
+    assert map_goal("mass") == 0
+    assert map_goal("toning") == 1
+    assert map_goal("strength") == 2
+    assert map_goal("weight_loss") == 3
+    assert map_goal("random") == 2  # default
 
 @pytest.mark.asyncio
 async def test_recommend_logic_no_similar_users():
@@ -34,6 +34,7 @@ async def test_recommend_logic_no_similar_users():
         "experience_numeric": [3, 3, 3],
         "days_per_week": [6, 6, 6],
         "goal": [4, 4, 4],
+        "location" [1, 2, 3],
         "program_name": [1, 2, 3],
         "rating": [5, 4, 3]
     })
@@ -45,7 +46,8 @@ async def test_recommend_logic_no_similar_users():
             gender="male",
             experience="beginner",
             goal="mass",
-            days_per_week=3
+            location='gym',
+            days_per_week=3,
         )
 
         result = await recommend(data)
@@ -53,7 +55,7 @@ async def test_recommend_logic_no_similar_users():
         assert isinstance(result, list)
         assert not (len(result) == 2 and isinstance(result[1], dict))
         assert result[0]["source"] == "popular"
-        assert "rating" in result[0]  
+        assert "predicted_rating" in result[0]  
 
 @pytest.mark.asyncio
 async def test_model_used_in_recommend():
@@ -65,8 +67,9 @@ async def test_model_used_in_recommend():
         "experience_numeric": [1, 1],
         "days_per_week": [3, 3],
         "goal": [1, 1],
+        "location": [1, 2],
+        "rating": [5, 4],
         "program_name": [1, 2],
-        "rating": [5, 4]
     })
 
     fake_model = MagicMock()
@@ -81,7 +84,8 @@ async def test_model_used_in_recommend():
                 gender="male",
                 experience="beginner",
                 goal="mass",
-                days_per_week=3
+                location='gym',
+                days_per_week=3,
             )
 
             result = await recommend(data)

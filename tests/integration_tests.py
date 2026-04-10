@@ -11,7 +11,8 @@ def test_recommend_endpoint():
         "gender": "male",
         "experience": "beginner",
         "goal": "mass",
-        "days_per_week": 3
+        "days_per_week": 3,
+        "location" : "gym"
     })
 
     assert response.status_code == 200
@@ -27,7 +28,8 @@ def test_invalid_data_types():
         "gender": "male",
         "experience": "beginner",
         "goal": "mass",
-        "days_per_week": 3
+        "days_per_week": 3,
+        "location" : "gym"
     }
     
     invalid_cases = [
@@ -37,6 +39,7 @@ def test_invalid_data_types():
         ("experience", 123, "experience as integer"),
         ("goal", 123, "goal as integer"),
         ("days_per_week", "three", "days_per_week as string"),
+        ("location", 123 : "location as integer")
     ]
     
     for field, invalid_value, description in invalid_cases:
