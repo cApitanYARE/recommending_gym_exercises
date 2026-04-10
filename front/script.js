@@ -1,11 +1,12 @@
-async function recommend(name,age,gender,experience,goal,days_per_week) {
+async function recommend(name,age,gender,experience,goal,days_per_week,location) {
     const userData = {
         name: name,
         age: age,
         gender: gender,
         experience: experience,
         goal: goal,
-        days_per_week: days_per_week
+        days_per_week: days_per_week,
+        location: location 
     };
 
     const response = await fetch('/api/recommend', {
@@ -45,7 +46,7 @@ async function recommend(name,age,gender,experience,goal,days_per_week) {
 
     for (let i = 0; i < programs.length; ++i) {
         const program = programs[i];
-        const card = createCard(program, exercisesData[program.program]);
+        const card = createCard(program,  exercisesData[program.program_num]);
         cardsContainer.appendChild(card);
     }
 
@@ -65,6 +66,7 @@ async function recommend(name,age,gender,experience,goal,days_per_week) {
             document.getElementById('experience').value = '';
             document.getElementById('goal').value = '';
             document.getElementById('days_per_week').value = '';
+            document.getElementById('location').value = '';
    
         }
 
@@ -90,7 +92,7 @@ function createCard(program, exercisesData) {
         programNumLine.style.fontSize = '25px';
         programNumLine.style.fontFamily = "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif";
         const programNameLine = exercisesData[0].program_name;
-        programNumLine.textContent = "Program #" + program.program +" "+ programNameLine;
+        programNumLine.textContent = "Program #" + program.program_num +" "+ programNameLine;
         
         const ratingLine = document.createElement('div');
         ratingLine.style.fontSize = '15px';
@@ -187,7 +189,7 @@ function showProgramDetails(program, exercisesData){
     const title = document.createElement('h2');
     title.style.marginBottom = '20px';
     title.style.color = '#E5E5E5';
-    title.textContent = `Program #${program.program} - ${exercisesData[0].program_name}`;
+    title.textContent = `Program #${program.program_num} - ${exercisesData[0].program_name}`;
 
     const rating = document.createElement('div');
     rating.style.marginBottom = '20px';
@@ -260,7 +262,7 @@ function showProgramDetails(program, exercisesData){
             name.style.flex = '1';
             name.style.minWidth = '200px';
             name.style.color = '#E5E5E5';
-            name.textContent = dayExercises[i].name;
+            name.textContent = dayExercises[i].exercise_name;
             
             const reps = document.createElement('span');
             reps.style.minWidth = '100px';
@@ -324,7 +326,7 @@ function downloadProgramAsPDF(program, exercisesData) {
             </style>
         </head>
         <body>
-            <h2>Program #${program.program} - ${exercisesData[0].program_name}</h2>
+            <h2>Program #${program.program_num} - ${exercisesData[0].program_name}</h2>
             <h3>Rating: ★ ${program.predicted_rating.toFixed(1)} / 5.0</h3>
     `;
     
@@ -385,8 +387,9 @@ function btn_confirm_form(){
     const experience = document.getElementById('experience');
     const goal = document.getElementById('goal');
     const days_per_week = document.getElementById('days_per_week');
+    const location = document.getElementById('location');
     
-    let fields = [name,age,gender,experience,goal,days_per_week]
+    let fields = [name,age,gender,experience,goal,days_per_week,location]
 
     let isEmpty = false;
 
@@ -404,6 +407,6 @@ function btn_confirm_form(){
         div.style.display = 'none';
         info.textContent = 'Please, enter the form';
         info.style.color = '';
-        recommend(name.value,age.value,gender.value,experience.value,goal.value,days_per_week.value)
+        recommend(name.value,age.value,gender.value,experience.value,goal.value,days_per_week.value, location.value)
     }    
 }
