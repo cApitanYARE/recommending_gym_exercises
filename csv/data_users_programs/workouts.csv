@@ -1,0 +1,405 @@
+program_id,gender,location,program_name,day,exercise_name,sets,min_reps,max_reps,difficulty,muscle_group
+1,male,gym,Full Body A,Day 1,Bench Press,3,8,10,beginner,Chest
+1,male,gym,Full Body A,Day 1,Bent-Over Barbell Row,3,8,10,intermediate,Back
+1,male,gym,Full Body A,Day 1,Squats,3,8,10,intermediate,Quads
+1,male,gym,Full Body A,Day 1,Standing Barbell Press,3,8,10,intermediate,Shoulders
+1,male,gym,Full Body A,Day 1,Barbell Curl,3,10,12,intermediate,Biceps
+1,male,gym,Full Body A,Day 1,Cable Triceps Extension,3,10,12,beginner,Triceps
+1,male,gym,Full Body A,Day 1,Romanian Deadlift,3,8,10,intermediate,Hamstrings
+1,male,gym,Full Body A,Day 2,Dumbbell Bench Press,3,8,10,beginner,Chest
+1,male,gym,Full Body A,Day 2,Single-Arm Dumbbell Row,3,8,10,beginner,Back
+1,male,gym,Full Body A,Day 2,Leg Press,3,10,12,beginner,Quads
+1,male,gym,Full Body A,Day 2,Front Dumbbell Raises,3,10,12,beginner,Shoulders
+1,male,gym,Full Body A,Day 2,Incline Curl,3,10,12,intermediate,Biceps
+1,male,gym,Full Body A,Day 2,Close-Grip Bench Press,3,10,12,intermediate,Triceps
+1,male,gym,Full Body A,Day 2,Hip Thrust,3,10,12,intermediate,Glutes
+1,male,gym,Full Body A,Day 3,Incline Bench Press,3,8,10,intermediate,Chest
+1,male,gym,Full Body A,Day 3,Lat Pulldown,3,10,12,beginner,Back
+1,male,gym,Full Body A,Day 3,Hack Squat,3,8,10,intermediate,Quads
+1,male,gym,Full Body A,Day 3,Side Lateral Raises,3,12,15,beginner,Shoulders
+1,male,gym,Full Body A,Day 3,Cable Biceps Curl,3,12,15,beginner,Biceps
+1,male,gym,Full Body A,Day 3,Rope Pushdown,3,12,15,beginner,Triceps
+1,male,gym,Full Body A,Day 3,Leg Curl,3,10,12,beginner,Hamstrings
+2,male,gym,Full Body B,Day 1,Chest Press Machine,3,10,12,beginner,Chest
+2,male,gym,Full Body B,Day 1,Pull-Ups,3,6,10,intermediate,Back
+2,male,gym,Full Body B,Day 1,Squats,3,8,10,intermediate,Quads
+2,male,gym,Full Body B,Day 1,Upright Row,3,10,12,intermediate,Shoulders
+2,male,gym,Full Body B,Day 1,Machine Curls,3,10,12,beginner,Biceps
+2,male,gym,Full Body B,Day 1,French Press,3,10,12,intermediate,Triceps
+2,male,gym,Full Body B,Day 1,Good Morning,3,8,10,advanced,Hamstrings
+2,male,gym,Full Body B,Day 2,Incline Dumbbell Press,3,8,10,intermediate,Chest
+2,male,gym,Full Body B,Day 2,T-Bar Row,3,8,10,advanced,Back
+2,male,gym,Full Body B,Day 2,Leg Press,3,10,12,beginner,Quads
+2,male,gym,Full Body B,Day 2,Cable Lateral Raises,3,12,15,beginner,Shoulders
+2,male,gym,Full Body B,Day 2,Biceps Curl,3,10,12,beginner,Biceps
+2,male,gym,Full Body B,Day 2,Weighted Dips,3,8,10,advanced,Chest
+2,male,gym,Full Body B,Day 2,Romanian Deadlift,3,8,10,intermediate,Hamstrings
+2,male,gym,Full Body B,Day 3,Decline Bench Press,3,8,10,intermediate,Chest
+2,male,gym,Full Body B,Day 3,Cable Pullover,3,10,12,intermediate,Back
+2,male,gym,Full Body B,Day 3,Hack Squat,3,8,10,intermediate,Quads
+2,male,gym,Full Body B,Day 3,Reverse Pec Deck Fly,3,12,15,beginner,Shoulders
+2,male,gym,Full Body B,Day 3,Barbell Curl,3,8,10,intermediate,Biceps
+2,male,gym,Full Body B,Day 3,Cable Triceps Extension,3,10,12,beginner,Triceps
+2,male,gym,Full Body B,Day 3,Standing Calf Raise,4,12,15,beginner,Calves
+3,male,gym,Full Body C,Day 1,Bench Press,4,6,8,beginner,Chest
+3,male,gym,Full Body C,Day 1,Bent-Over Barbell Row,4,6,8,intermediate,Back
+3,male,gym,Full Body C,Day 1,Squats,4,6,8,intermediate,Quads
+3,male,gym,Full Body C,Day 1,Standing Barbell Press,3,8,10,intermediate,Shoulders
+3,male,gym,Full Body C,Day 1,Incline Curl,3,8,10,intermediate,Biceps
+3,male,gym,Full Body C,Day 1,Close-Grip Bench Press,3,8,10,intermediate,Triceps
+3,male,gym,Full Body C,Day 1,Leg Curl,3,10,12,beginner,Hamstrings
+3,male,gym,Full Body C,Day 2,Incline Bench Press,4,6,8,intermediate,Chest
+3,male,gym,Full Body C,Day 2,Single-Arm Dumbbell Row,4,8,10,beginner,Back
+3,male,gym,Full Body C,Day 2,Leg Press,3,10,12,beginner,Quads
+3,male,gym,Full Body C,Day 2,Side Lateral Raises,3,12,15,beginner,Shoulders
+3,male,gym,Full Body C,Day 2,Cable Biceps Curl,3,10,12,beginner,Biceps
+3,male,gym,Full Body C,Day 2,Rope Pushdown,3,10,12,beginner,Triceps
+3,male,gym,Full Body C,Day 2,Hip Thrust,3,10,12,intermediate,Glutes
+3,male,gym,Full Body C,Day 3,Dumbbell Bench Press,4,6,8,beginner,Chest
+3,male,gym,Full Body C,Day 3,Lat Pulldown,4,8,10,beginner,Back
+3,male,gym,Full Body C,Day 3,Hack Squat,3,8,10,intermediate,Quads
+3,male,gym,Full Body C,Day 3,Cable Face Pull,3,12,15,beginner,Shoulders
+3,male,gym,Full Body C,Day 3,Machine Curls,3,10,12,beginner,Biceps
+3,male,gym,Full Body C,Day 3,Weighted Dips,3,8,10,advanced,Chest
+3,male,gym,Full Body C,Day 3,Romanian Deadlift,3,8,10,intermediate,Hamstrings
+4,male,gym,Upper Lower A,Day 1 Upper,Bench Press,4,8,10,beginner,Chest
+4,male,gym,Upper Lower A,Day 1 Upper,Bent-Over Barbell Row,4,8,10,intermediate,Back
+4,male,gym,Upper Lower A,Day 1 Upper,Standing Barbell Press,3,8,10,intermediate,Shoulders
+4,male,gym,Upper Lower A,Day 1 Upper,Single-Arm Dumbbell Row,3,8,10,beginner,Back
+4,male,gym,Upper Lower A,Day 1 Upper,Barbell Curl,3,10,12,intermediate,Biceps
+4,male,gym,Upper Lower A,Day 1 Upper,Cable Triceps Extension,3,10,12,beginner,Triceps
+4,male,gym,Upper Lower A,Day 2 Lower,Squats,4,8,10,intermediate,Quads
+4,male,gym,Upper Lower A,Day 2 Lower,Romanian Deadlift,4,8,10,intermediate,Hamstrings
+4,male,gym,Upper Lower A,Day 2 Lower,Leg Extension,3,10,12,beginner,Quads
+4,male,gym,Upper Lower A,Day 2 Lower,Leg Curl,3,10,12,beginner,Hamstrings
+4,male,gym,Upper Lower A,Day 2 Lower,Standing Calf Raise,4,12,15,beginner,Calves
+4,male,gym,Upper Lower A,Day 3 Upper,Incline Bench Press,4,8,10,intermediate,Chest
+4,male,gym,Upper Lower A,Day 3 Upper,Lat Pulldown,4,10,12,beginner,Back
+4,male,gym,Upper Lower A,Day 3 Upper,Side Lateral Raises,3,12,15,beginner,Shoulders
+4,male,gym,Upper Lower A,Day 3 Upper,Seated Cable Row,3,10,12,beginner,Back
+4,male,gym,Upper Lower A,Day 3 Upper,Incline Curl,3,10,12,intermediate,Biceps
+4,male,gym,Upper Lower A,Day 3 Upper,French Press,3,10,12,intermediate,Triceps
+4,male,gym,Upper Lower A,Day 4 Lower,Leg Press,4,10,12,beginner,Quads
+4,male,gym,Upper Lower A,Day 4 Lower,Good Morning,3,8,10,advanced,Hamstrings
+4,male,gym,Upper Lower A,Day 4 Lower,Hip Thrust,3,10,12,intermediate,Glutes
+4,male,gym,Upper Lower A,Day 4 Lower,Cable Kickbacks,3,12,15,beginner,Glutes
+4,male,gym,Upper Lower A,Day 4 Lower,Glute Bridge,3,15,20,beginner,Glutes
+5,male,gym,Upper Lower B,Day 1 Upper,Dumbbell Bench Press,4,8,10,beginner,Chest
+5,male,gym,Upper Lower B,Day 1 Upper,T-Bar Row,4,8,10,advanced,Back
+5,male,gym,Upper Lower B,Day 1 Upper,Upright Row,3,10,12,intermediate,Shoulders
+5,male,gym,Upper Lower B,Day 1 Upper,Pull-Ups,3,6,10,intermediate,Back
+5,male,gym,Upper Lower B,Day 1 Upper,Machine Curls,3,10,12,beginner,Biceps
+5,male,gym,Upper Lower B,Day 1 Upper,Close-Grip Bench Press,3,8,10,intermediate,Triceps
+5,male,gym,Upper Lower B,Day 2 Lower,Hack Squat,4,8,10,intermediate,Quads
+5,male,gym,Upper Lower B,Day 2 Lower,Leg Curl,4,10,12,beginner,Hamstrings
+5,male,gym,Upper Lower B,Day 2 Lower,Squats,3,8,10,intermediate,Quads
+5,male,gym,Upper Lower B,Day 2 Lower,Romanian Deadlift,3,8,10,intermediate,Hamstrings
+5,male,gym,Upper Lower B,Day 2 Lower,Standing Calf Raise,4,12,15,beginner,Calves
+5,male,gym,Upper Lower B,Day 3 Upper,Incline Dumbbell Press,4,8,10,intermediate,Chest
+5,male,gym,Upper Lower B,Day 3 Upper,Cable Pullover,4,10,12,intermediate,Back
+5,male,gym,Upper Lower B,Day 3 Upper,Cable Lateral Raises,3,12,15,beginner,Shoulders
+5,male,gym,Upper Lower B,Day 3 Upper,Bent-Over Barbell Row,3,8,10,intermediate,Back
+5,male,gym,Upper Lower B,Day 3 Upper,Biceps Curl,3,10,12,beginner,Biceps
+5,male,gym,Upper Lower B,Day 3 Upper,Weighted Dips,3,8,10,advanced,Chest
+5,male,gym,Upper Lower B,Day 4 Lower,Leg Press,4,10,12,beginner,Quads
+5,male,gym,Upper Lower B,Day 4 Lower,Hip Thrust,4,10,12,intermediate,Glutes
+5,male,gym,Upper Lower B,Day 4 Lower,Leg Extension,3,12,15,beginner,Quads
+5,male,gym,Upper Lower B,Day 4 Lower,Good Morning,3,8,10,advanced,Hamstrings
+5,male,gym,Upper Lower B,Day 4 Lower,Cable Kickbacks,3,12,15,beginner,Glutes
+6,male,gym,PPL A,Day 1 Push,Bench Press,4,8,10,beginner,Chest
+6,male,gym,PPL A,Day 1 Push,Incline Bench Press,4,8,10,intermediate,Chest
+6,male,gym,PPL A,Day 1 Push,Standing Barbell Press,3,8,10,intermediate,Shoulders
+6,male,gym,PPL A,Day 1 Push,Side Lateral Raises,3,12,15,beginner,Shoulders
+6,male,gym,PPL A,Day 1 Push,Close-Grip Bench Press,3,8,10,intermediate,Triceps
+6,male,gym,PPL A,Day 1 Push,Cable Triceps Extension,3,10,12,beginner,Triceps
+6,male,gym,PPL A,Day 2 Pull,Pull-Ups,4,6,10,intermediate,Back
+6,male,gym,PPL A,Day 2 Pull,Bent-Over Barbell Row,4,8,10,intermediate,Back
+6,male,gym,PPL A,Day 2 Pull,Single-Arm Dumbbell Row,3,8,10,beginner,Back
+6,male,gym,PPL A,Day 2 Pull,Reverse Pec Deck Fly,3,12,15,beginner,Shoulders
+6,male,gym,PPL A,Day 2 Pull,Barbell Curl,3,8,10,intermediate,Biceps
+6,male,gym,PPL A,Day 2 Pull,Incline Curl,3,10,12,intermediate,Biceps
+6,male,gym,PPL A,Day 3 Legs,Squats,4,8,10,intermediate,Quads
+6,male,gym,PPL A,Day 3 Legs,Romanian Deadlift,4,8,10,intermediate,Hamstrings
+6,male,gym,PPL A,Day 3 Legs,Leg Extension,3,12,15,beginner,Quads
+6,male,gym,PPL A,Day 3 Legs,Leg Curl,3,12,15,beginner,Hamstrings
+6,male,gym,PPL A,Day 3 Legs,Standing Calf Raise,4,12,15,beginner,Calves
+6,male,gym,PPL A,Day 4 Push,Dumbbell Bench Press,4,8,10,beginner,Chest
+6,male,gym,PPL A,Day 4 Push,Decline Bench Press,3,8,10,intermediate,Chest
+6,male,gym,PPL A,Day 4 Push,Front Dumbbell Raises,3,10,12,beginner,Shoulders
+6,male,gym,PPL A,Day 4 Push,Cable Lateral Raises,3,12,15,beginner,Shoulders
+6,male,gym,PPL A,Day 4 Push,Weighted Dips,3,8,10,advanced,Chest
+6,male,gym,PPL A,Day 4 Push,Rope Pushdown,3,12,15,beginner,Triceps
+6,male,gym,PPL A,Day 5 Pull,Lat Pulldown,4,10,12,beginner,Back
+6,male,gym,PPL A,Day 5 Pull,T-Bar Row,4,8,10,advanced,Back
+6,male,gym,PPL A,Day 5 Pull,Seated Cable Row,3,10,12,beginner,Back
+6,male,gym,PPL A,Day 5 Pull,Cable Face Pull,3,12,15,beginner,Shoulders
+6,male,gym,PPL A,Day 5 Pull,Cable Biceps Curl,3,12,15,beginner,Biceps
+6,male,gym,PPL A,Day 5 Pull,Machine Curls,3,10,12,beginner,Biceps
+6,male,gym,PPL A,Day 6 Legs,Leg Press,4,10,12,beginner,Quads
+6,male,gym,PPL A,Day 6 Legs,Hack Squat,3,8,10,intermediate,Quads
+6,male,gym,PPL A,Day 6 Legs,Good Morning,3,8,10,advanced,Hamstrings
+6,male,gym,PPL A,Day 6 Legs,Hip Thrust,3,10,12,intermediate,Glutes
+6,male,gym,PPL A,Day 6 Legs,Cable Kickbacks,3,12,15,beginner,Glutes
+6,male,gym,PPL A,Day 6 Legs,Glute Bridge,3,15,20,beginner,Glutes
+7,male,gym,PPL B,Day 1 Push,Chest Press Machine,4,10,12,beginner,Chest
+7,male,gym,PPL B,Day 1 Push,Incline Dumbbell Press,4,8,10,intermediate,Chest
+7,male,gym,PPL B,Day 1 Push,Upright Row,3,10,12,intermediate,Shoulders
+7,male,gym,PPL B,Day 1 Push,Dumbbell Fly,3,10,12,intermediate,Chest
+7,male,gym,PPL B,Day 1 Push,French Press,3,10,12,intermediate,Triceps
+7,male,gym,PPL B,Day 1 Push,Close-Grip Bench Press,3,8,10,intermediate,Triceps
+7,male,gym,PPL B,Day 2 Pull,Pull-Ups,4,6,10,intermediate,Back
+7,male,gym,PPL B,Day 2 Pull,Cable Pullover,4,10,12,intermediate,Back
+7,male,gym,PPL B,Day 2 Pull,Bent-Over Barbell Row,3,8,10,intermediate,Back
+7,male,gym,PPL B,Day 2 Pull,Shrugs,3,12,15,beginner,Traps
+7,male,gym,PPL B,Day 2 Pull,Biceps Curl,3,10,12,beginner,Biceps
+7,male,gym,PPL B,Day 2 Pull,Barbell Curl,3,8,10,intermediate,Biceps
+7,male,gym,PPL B,Day 3 Legs,Squats,4,8,10,intermediate,Quads
+7,male,gym,PPL B,Day 3 Legs,Leg Curl,4,10,12,beginner,Hamstrings
+7,male,gym,PPL B,Day 3 Legs,Leg Press,3,10,12,beginner,Quads
+7,male,gym,PPL B,Day 3 Legs,Romanian Deadlift,3,8,10,intermediate,Hamstrings
+7,male,gym,PPL B,Day 3 Legs,Standing Calf Raise,4,12,15,beginner,Calves
+7,male,gym,PPL B,Day 4 Push,Bench Press,4,8,10,beginner,Chest
+7,male,gym,PPL B,Day 4 Push,Incline Bench Press,3,8,10,intermediate,Chest
+7,male,gym,PPL B,Day 4 Push,Standing Barbell Press,3,8,10,intermediate,Shoulders
+7,male,gym,PPL B,Day 4 Push,Side Lateral Raises,3,12,15,beginner,Shoulders
+7,male,gym,PPL B,Day 4 Push,Weighted Dips,3,8,10,advanced,Chest
+7,male,gym,PPL B,Day 4 Push,Cable Triceps Extension,3,10,12,beginner,Triceps
+7,male,gym,PPL B,Day 5 Pull,Lat Pulldown,4,10,12,beginner,Back
+7,male,gym,PPL B,Day 5 Pull,T-Bar Row,4,8,10,advanced,Back
+7,male,gym,PPL B,Day 5 Pull,Reverse Pec Deck Fly,3,12,15,beginner,Shoulders
+7,male,gym,PPL B,Day 5 Pull,Single-Arm Dumbbell Row,3,8,10,beginner,Back
+7,male,gym,PPL B,Day 5 Pull,Incline Curl,3,10,12,intermediate,Biceps
+7,male,gym,PPL B,Day 5 Pull,Cable Biceps Curl,3,12,15,beginner,Biceps
+7,male,gym,PPL B,Day 6 Legs,Hack Squat,4,8,10,intermediate,Quads
+7,male,gym,PPL B,Day 6 Legs,Hip Thrust,4,10,12,intermediate,Glutes
+7,male,gym,PPL B,Day 6 Legs,Leg Extension,3,12,15,beginner,Quads
+7,male,gym,PPL B,Day 6 Legs,Good Morning,3,8,10,advanced,Hamstrings
+7,male,gym,PPL B,Day 6 Legs,Cable Kickbacks,3,12,15,beginner,Glutes
+8,male,gym,Bro Split A,Day 1 Chest Triceps,Bench Press,4,8,10,beginner,Chest
+8,male,gym,Bro Split A,Day 1 Chest Triceps,Incline Bench Press,4,8,10,intermediate,Chest
+8,male,gym,Bro Split A,Day 1 Chest Triceps,Dumbbell Fly,3,10,12,intermediate,Chest
+8,male,gym,Bro Split A,Day 1 Chest Triceps,Decline Bench Press,3,8,10,intermediate,Chest
+8,male,gym,Bro Split A,Day 1 Chest Triceps,Cable Triceps Extension,4,10,12,beginner,Triceps
+8,male,gym,Bro Split A,Day 1 Chest Triceps,Rope Pushdown,3,12,15,beginner,Triceps
+8,male,gym,Bro Split A,Day 1 Chest Triceps,Weighted Dips,3,8,10,advanced,Chest
+8,male,gym,Bro Split A,Day 2 Back Biceps,Pull-Ups,4,6,10,intermediate,Back
+8,male,gym,Bro Split A,Day 2 Back Biceps,Bent-Over Barbell Row,4,8,10,intermediate,Back
+8,male,gym,Bro Split A,Day 2 Back Biceps,T-Bar Row,3,8,10,advanced,Back
+8,male,gym,Bro Split A,Day 2 Back Biceps,Seated Cable Row,3,10,12,beginner,Back
+8,male,gym,Bro Split A,Day 2 Back Biceps,Barbell Curl,4,8,10,intermediate,Biceps
+8,male,gym,Bro Split A,Day 2 Back Biceps,Incline Curl,3,10,12,intermediate,Biceps
+8,male,gym,Bro Split A,Day 2 Back Biceps,Biceps Curl,3,10,12,beginner,Biceps
+8,male,gym,Bro Split A,Day 3 Shoulders,Standing Barbell Press,4,8,10,intermediate,Shoulders
+8,male,gym,Bro Split A,Day 3 Shoulders,Front Dumbbell Raises,3,10,12,beginner,Shoulders
+8,male,gym,Bro Split A,Day 3 Shoulders,Side Lateral Raises,4,12,15,beginner,Shoulders
+8,male,gym,Bro Split A,Day 3 Shoulders,Cable Lateral Raises,3,12,15,beginner,Shoulders
+8,male,gym,Bro Split A,Day 3 Shoulders,Reverse Pec Deck Fly,4,12,15,beginner,Shoulders
+8,male,gym,Bro Split A,Day 3 Shoulders,Cable Face Pull,3,15,20,beginner,Shoulders
+8,male,gym,Bro Split A,Day 4 Legs,Squats,4,8,10,intermediate,Quads
+8,male,gym,Bro Split A,Day 4 Legs,Romanian Deadlift,4,8,10,intermediate,Hamstrings
+8,male,gym,Bro Split A,Day 4 Legs,Leg Press,3,10,12,beginner,Quads
+8,male,gym,Bro Split A,Day 4 Legs,Leg Extension,3,12,15,beginner,Quads
+8,male,gym,Bro Split A,Day 4 Legs,Leg Curl,3,12,15,beginner,Hamstrings
+8,male,gym,Bro Split A,Day 4 Legs,Standing Calf Raise,4,12,15,beginner,Calves
+8,male,gym,Bro Split A,Day 5 Chest Back,Dumbbell Bench Press,4,8,10,beginner,Chest
+8,male,gym,Bro Split A,Day 5 Chest Back,Incline Dumbbell Press,3,8,10,intermediate,Chest
+8,male,gym,Bro Split A,Day 5 Chest Back,Lat Pulldown,4,10,12,beginner,Back
+8,male,gym,Bro Split A,Day 5 Chest Back,Single-Arm Dumbbell Row,3,8,10,beginner,Back
+8,male,gym,Bro Split A,Day 5 Chest Back,Cable Pullover,3,10,12,intermediate,Back
+8,male,gym,Bro Split A,Day 5 Chest Back,Shrugs,3,12,15,beginner,Traps
+9,male,gym,Bro Split B,Day 1 Chest Triceps,Chest Press Machine,4,10,12,beginner,Chest
+9,male,gym,Bro Split B,Day 1 Chest Triceps,Incline Dumbbell Press,4,8,10,intermediate,Chest
+9,male,gym,Bro Split B,Day 1 Chest Triceps,Cable Crossover,3,12,15,beginner,Chest
+9,male,gym,Bro Split B,Day 1 Chest Triceps,Decline Bench Press,3,8,10,intermediate,Chest
+9,male,gym,Bro Split B,Day 1 Chest Triceps,French Press,4,10,12,intermediate,Triceps
+9,male,gym,Bro Split B,Day 1 Chest Triceps,Close-Grip Bench Press,3,8,10,intermediate,Triceps
+9,male,gym,Bro Split B,Day 1 Chest Triceps,Weighted Dips,3,8,10,advanced,Chest
+9,male,gym,Bro Split B,Day 2 Back Biceps,Lat Pulldown,4,10,12,beginner,Back
+9,male,gym,Bro Split B,Day 2 Back Biceps,Single-Arm Dumbbell Row,4,8,10,beginner,Back
+9,male,gym,Bro Split B,Day 2 Back Biceps,Cable Pullover,3,10,12,intermediate,Back
+9,male,gym,Bro Split B,Day 2 Back Biceps,Shrugs,3,12,15,beginner,Traps
+9,male,gym,Bro Split B,Day 2 Back Biceps,Biceps Curl,4,10,12,beginner,Biceps
+9,male,gym,Bro Split B,Day 2 Back Biceps,Cable Biceps Curl,3,12,15,beginner,Biceps
+9,male,gym,Bro Split B,Day 2 Back Biceps,Machine Curls,3,10,12,beginner,Biceps
+9,male,gym,Bro Split B,Day 3 Shoulders,Upright Row,4,10,12,intermediate,Shoulders
+9,male,gym,Bro Split B,Day 3 Shoulders,Front Dumbbell Raises,3,10,12,beginner,Shoulders
+9,male,gym,Bro Split B,Day 3 Shoulders,Side Lateral Raises,4,12,15,beginner,Shoulders
+9,male,gym,Bro Split B,Day 3 Shoulders,Cable Lateral Raises,3,12,15,beginner,Shoulders
+9,male,gym,Bro Split B,Day 3 Shoulders,Reverse Pec Deck Fly,4,12,15,beginner,Shoulders
+9,male,gym,Bro Split B,Day 3 Shoulders,Seated Bent-Over Raises,3,10,12,intermediate,Shoulders
+9,male,gym,Bro Split B,Day 4 Legs,Leg Press,4,10,12,beginner,Quads
+9,male,gym,Bro Split B,Day 4 Legs,Leg Curl,4,10,12,beginner,Hamstrings
+9,male,gym,Bro Split B,Day 4 Legs,Hack Squat,3,8,10,intermediate,Quads
+9,male,gym,Bro Split B,Day 4 Legs,Romanian Deadlift,3,8,10,intermediate,Hamstrings
+9,male,gym,Bro Split B,Day 4 Legs,Standing Calf Raise,4,12,15,beginner,Calves
+9,male,gym,Bro Split B,Day 5 Chest Back,Dumbbell Bench Press,4,8,10,beginner,Chest
+9,male,gym,Bro Split B,Day 5 Chest Back,Incline Bench Press,3,8,10,intermediate,Chest
+9,male,gym,Bro Split B,Day 5 Chest Back,Pull-Ups,4,6,10,intermediate,Back
+9,male,gym,Bro Split B,Day 5 Chest Back,T-Bar Row,3,8,10,advanced,Back
+9,male,gym,Bro Split B,Day 5 Chest Back,Bent-Over Barbell Row,3,8,10,intermediate,Back
+9,male,gym,Bro Split B,Day 5 Chest Back,Seated Cable Row,3,10,12,beginner,Back
+10,male,gym,Powerlifting Basics A,Day 1 Squat Focus,Squats,5,3,5,advanced,Quads
+10,male,gym,Powerlifting Basics A,Day 1 Squat Focus,Leg Press,3,8,10,intermediate,Quads
+10,male,gym,Powerlifting Basics A,Day 1 Squat Focus,Good Morning,3,8,10,advanced,Hamstrings
+10,male,gym,Powerlifting Basics A,Day 1 Squat Focus,Standing Calf Raise,4,10,12,beginner,Calves
+10,male,gym,Powerlifting Basics A,Day 2 Bench Focus,Bench Press,5,3,5,intermediate,Chest
+10,male,gym,Powerlifting Basics A,Day 2 Bench Focus,Incline Dumbbell Press,3,8,10,intermediate,Chest
+10,male,gym,Powerlifting Basics A,Day 2 Bench Focus,Close-Grip Bench Press,3,8,10,intermediate,Triceps
+10,male,gym,Powerlifting Basics A,Day 2 Bench Focus,Cable Triceps Extension,3,10,12,beginner,Triceps
+10,male,gym,Powerlifting Basics A,Day 3 Deadlift Focus,Deadlift,5,1,5,advanced,Hamstrings
+10,male,gym,Powerlifting Basics A,Day 3 Deadlift Focus,Romanian Deadlift,3,8,10,intermediate,Hamstrings
+10,male,gym,Powerlifting Basics A,Day 3 Deadlift Focus,Pull-Ups,3,6,10,intermediate,Back
+10,male,gym,Powerlifting Basics A,Day 3 Deadlift Focus,Shrugs,3,10,12,beginner,Traps
+11,female,gym,Full Body Toning A,Day 1,Squats with Dumbbell,3,12,15,beginner,Quads
+11,female,gym,Full Body Toning A,Day 1,Dumbbell Bench Press,3,12,15,beginner,Chest
+11,female,gym,Full Body Toning A,Day 1,Lat Pulldown,3,12,15,beginner,Back
+11,female,gym,Full Body Toning A,Day 1,Reverse Lunges,3,12,15,beginner,Quads
+11,female,gym,Full Body Toning A,Day 1,Plank,3,30,45,beginner,Core
+11,female,gym,Full Body Toning A,Day 2,Romanian Deadlift with Dumbbells,3,12,15,beginner,Hamstrings
+11,female,gym,Full Body Toning A,Day 2,Knee Push-Ups,3,12,15,beginner,Chest
+11,female,gym,Full Body Toning A,Day 2,Seated Cable Row,3,12,15,beginner,Back
+11,female,gym,Full Body Toning A,Day 2,Glute Bridge,3,15,20,beginner,Glutes
+11,female,gym,Full Body Toning A,Day 2,Bicycle Crunches,3,15,20,beginner,Core
+11,female,gym,Full Body Toning A,Day 3,Leg Press,3,12,15,beginner,Quads
+11,female,gym,Full Body Toning A,Day 3,Standing Dumbbell Press,3,12,15,beginner,Shoulders
+11,female,gym,Full Body Toning A,Day 3,Leg Curl,3,12,15,beginner,Hamstrings
+11,female,gym,Full Body Toning A,Day 3,Bent-Over Dumbbell Raises,3,12,15,beginner,Shoulders
+11,female,gym,Full Body Toning A,Day 3,Russian Twist,3,15,20,beginner,Core
+12,female,gym,Glute Focused Split A,Day 1 Glute Quads,Barbell Squats Wide Stance,4,10,12,intermediate,Quads
+12,female,gym,Glute Focused Split A,Day 1 Glute Quads,Reverse Lunges,4,10,12,intermediate,Quads
+12,female,gym,Glute Focused Split A,Day 1 Glute Quads,Barbell Hip Thrust,4,10,12,intermediate,Glutes
+12,female,gym,Glute Focused Split A,Day 1 Glute Quads,Leg Extension,3,12,15,beginner,Quads
+12,female,gym,Glute Focused Split A,Day 2 Upper,Incline Dumbbell Press,4,10,12,intermediate,Chest
+12,female,gym,Glute Focused Split A,Day 2 Upper,Lat Pulldown,4,10,12,beginner,Back
+12,female,gym,Glute Focused Split A,Day 2 Upper,Side Lateral Raises,3,12,15,beginner,Shoulders
+12,female,gym,Glute Focused Split A,Day 2 Upper,Triceps Pushdown,3,12,15,beginner,Triceps
+12,female,gym,Glute Focused Split A,Day 2 Upper,Dumbbell Curls,3,12,15,beginner,Biceps
+12,female,gym,Glute Focused Split A,Day 3 Glute Hamstrings,Romanian Deadlift,4,10,12,intermediate,Hamstrings
+12,female,gym,Glute Focused Split A,Day 3 Glute Hamstrings,Leg Curl,4,12,15,beginner,Hamstrings
+12,female,gym,Glute Focused Split A,Day 3 Glute Hamstrings,Bulgarian Split Squats,4,10,12,intermediate,Quads
+12,female,gym,Glute Focused Split A,Day 3 Glute Hamstrings,Hyperextension Rounded Back,4,12,15,intermediate,Hamstrings
+13,female,gym,Upper Lower Women A,Day 1 Lower Strength,Squats,4,8,10,intermediate,Quads
+13,female,gym,Upper Lower Women A,Day 1 Lower Strength,Romanian Deadlift,4,10,12,intermediate,Hamstrings
+13,female,gym,Upper Lower Women A,Day 1 Lower Strength,Lunges,3,12,15,beginner,Quads
+13,female,gym,Upper Lower Women A,Day 1 Lower Strength,Standing Calf Raise,4,12,15,beginner,Calves
+13,female,gym,Upper Lower Women A,Day 2 Upper Strength,Dumbbell Bench Press,4,8,10,beginner,Chest
+13,female,gym,Upper Lower Women A,Day 2 Upper Strength,Seated Cable Row,4,10,12,beginner,Back
+13,female,gym,Upper Lower Women A,Day 2 Upper Strength,Overhead Press,3,8,10,intermediate,Shoulders
+13,female,gym,Upper Lower Women A,Day 2 Upper Strength,Triceps Extension,3,10,12,beginner,Triceps
+13,female,gym,Upper Lower Women A,Day 2 Upper Strength,Bicep Curls,3,10,12,beginner,Biceps
+13,female,gym,Upper Lower Women A,Day 3 Lower Hypertrophy,Leg Press,4,12,15,beginner,Quads
+13,female,gym,Upper Lower Women A,Day 3 Lower Hypertrophy,Leg Curl,4,12,15,beginner,Hamstrings
+13,female,gym,Upper Lower Women A,Day 3 Lower Hypertrophy,Barbell Hip Thrust,4,12,15,intermediate,Glutes
+13,female,gym,Upper Lower Women A,Day 3 Lower Hypertrophy,Hyperextension,4,12,15,beginner,Hamstrings
+13,female,gym,Upper Lower Women A,Day 4 Upper Endurance,Cable Crossover,3,15,20,beginner,Chest
+13,female,gym,Upper Lower Women A,Day 4 Upper Endurance,Lat Pulldown,3,15,20,beginner,Back
+13,female,gym,Upper Lower Women A,Day 4 Upper Endurance,Side Lateral Raises,3,15,20,beginner,Shoulders
+13,female,gym,Upper Lower Women A,Day 4 Upper Endurance,Push-Ups,3,max,max,beginner,Chest
+14,male,home,Bodyweight Strength A,Day 1,Squats,3,12,15,beginner,Quads
+14,male,home,Bodyweight Strength A,Day 1,Push-Ups,3,10,15,beginner,Chest
+14,male,home,Bodyweight Strength A,Day 1,Chair Dips,3,10,12,beginner,Triceps
+14,male,home,Bodyweight Strength A,Day 1,Lunges,3,12,15,beginner,Quads
+14,male,home,Bodyweight Strength A,Day 1,Plank,3,45,60,beginner,Core
+14,male,home,Bodyweight Strength A,Day 2,Bulgarian Squats,3,10,12,intermediate,Quads
+14,male,home,Bodyweight Strength A,Day 2,Diamond Push-Ups,3,8,12,intermediate,Chest
+14,male,home,Bodyweight Strength A,Day 2,Pull-Ups or Negatives,3,6,10,intermediate,Back
+14,male,home,Bodyweight Strength A,Day 2,Superman,3,12,15,beginner,Back
+14,male,home,Bodyweight Strength A,Day 2,Side Plank,3,30,45,beginner,Core
+14,male,home,Bodyweight Strength A,Day 3,Jump Squats,3,8,12,intermediate,Quads
+14,male,home,Bodyweight Strength A,Day 3,Clap Push-Ups,3,6,10,advanced,Chest
+14,male,home,Bodyweight Strength A,Day 3,Triceps Dips,3,8,12,intermediate,Triceps
+14,male,home,Bodyweight Strength A,Day 3,Burpees,3,8,12,intermediate,Full Body
+14,male,home,Bodyweight Strength A,Day 3,Leg Raises,3,12,15,beginner,Core
+15,male,home,Dumbbell Only A,Day 1,Goblet Squats,4,10,12,intermediate,Quads
+15,male,home,Dumbbell Only A,Day 1,Floor Dumbbell Press,4,10,12,beginner,Chest
+15,male,home,Dumbbell Only A,Day 1,Bent-Over Dumbbell Row,4,10,12,intermediate,Back
+15,male,home,Dumbbell Only A,Day 1,Side Lateral Raises,3,12,15,beginner,Shoulders
+15,male,home,Dumbbell Only A,Day 1,Romanian Deadlift,4,10,12,intermediate,Hamstrings
+15,male,home,Dumbbell Only A,Day 2,Lunges with Dumbbells,4,10,12,intermediate,Quads
+15,male,home,Dumbbell Only A,Day 2,Standing Dumbbell Press,4,10,12,intermediate,Shoulders
+15,male,home,Dumbbell Only A,Day 2,Single-Arm Dumbbell Row,4,10,12,beginner,Back
+15,male,home,Dumbbell Only A,Day 2,French Press One Dumbbell,3,10,12,intermediate,Triceps
+15,male,home,Dumbbell Only A,Day 2,Dumbbell Curls,3,10,12,beginner,Biceps
+15,male,home,Dumbbell Only A,Day 3,Goblet Squats,4,10,12,intermediate,Quads
+15,male,home,Dumbbell Only A,Day 3,Incline Dumbbell Press Doorway,4,10,12,intermediate,Chest
+15,male,home,Dumbbell Only A,Day 3,Glute Bridge with Dumbbell,4,12,15,intermediate,Glutes
+15,male,home,Dumbbell Only A,Day 3,Shrugs,4,12,15,beginner,Traps
+15,male,home,Dumbbell Only A,Day 3,Calf Raises,4,15,20,beginner,Calves
+16,male,home,HIIT for Men A,Day 1,Burpees,3,30,30,advanced,Full Body
+16,male,home,HIIT for Men A,Day 1,Mountain Climbers,3,30,30,advanced,Core
+16,male,home,HIIT for Men A,Day 1,High Knees,3,30,30,advanced,Cardio
+16,male,home,HIIT for Men A,Day 1,Push-Ups,3,30,30,intermediate,Chest
+16,male,home,HIIT for Men A,Day 1,Jump Squats,3,30,30,advanced,Quads
+16,male,home,HIIT for Men A,Day 1,Plank,3,30,30,beginner,Core
+17,male,street,Street Workout Basics A,Day 1,Pull-Ups Pronated,3,max,8,intermediate,Back
+17,male,street,Street Workout Basics A,Day 1,Dips Feet on Ground,3,8,12,beginner,Chest
+17,male,street,Street Workout Basics A,Day 1,Squats,3,15,20,beginner,Quads
+17,male,street,Street Workout Basics A,Day 1,Hanging Leg Raises,3,8,12,intermediate,Core
+17,male,street,Street Workout Basics A,Day 2,Pull-Ups Supinated,3,max,8,intermediate,Back
+17,male,street,Street Workout Basics A,Day 2,Close Push-Ups,3,10,15,beginner,Chest
+17,male,street,Street Workout Basics A,Day 2,Lunges,3,12,15,beginner,Quads
+17,male,street,Street Workout Basics A,Day 2,Australian Pull-Ups,3,10,12,beginner,Back
+17,male,street,Street Workout Basics A,Day 3,Negative Pull-Ups,3,5,8,intermediate,Back
+17,male,street,Street Workout Basics A,Day 3,Full Dips,3,6,10,intermediate,Chest
+17,male,street,Street Workout Basics A,Day 3,Pistol Squats Assisted,3,6,10,advanced,Quads
+17,male,street,Street Workout Basics A,Day 3,Plank,3,45,60,beginner,Core
+18,female,home,HIIT Tabata A,Day 1,High Knees,8,20,20,advanced,Cardio
+18,female,home,HIIT Tabata A,Day 1,Burpees No Push-Up,8,20,20,advanced,Full Body
+18,female,home,HIIT Tabata A,Day 1,Reverse Lunges with Jump,8,20,20,intermediate,Quads
+18,female,home,HIIT Tabata A,Day 1,Plank Arm Taps,8,20,20,beginner,Core
+19,female,home,Pilates Core A,Day 1,The Hundred,3,10,10,beginner,Core
+19,female,home,Pilates Core A,Day 1,Roll-Up,3,10,12,beginner,Core
+19,female,home,Pilates Core A,Day 1,Leg Lifts Supine,3,10,12,beginner,Core
+19,female,home,Pilates Core A,Day 1,Forearm Plank,3,30,45,beginner,Core
+19,female,home,Pilates Core A,Day 1,Cat Cow Stretch,3,8,10,beginner,Back
+20,female,home,Yoga Flow A,Day 1,Sun Salutation A,5,5,5,beginner,Full Body
+20,female,home,Yoga Flow A,Day 1,Downward Dog,5,30,30,beginner,Full Body
+20,female,home,Yoga Flow A,Day 1,High Lunge,5,5,5,beginner,Quads
+20,female,home,Yoga Flow A,Day 1,Cobra Pose,5,5,5,beginner,Back
+20,female,home,Yoga Flow A,Day 1,Child Pose,5,30,30,beginner,Full Body
+21,female,home,Resistance Band A,Day 1,Squats with Band,3,12,15,intermediate,Quads
+21,female,home,Resistance Band A,Day 1,Glute Bridge with Band,3,15,20,intermediate,Glutes
+21,female,home,Resistance Band A,Day 1,Band Lateral Walks,3,12,15,intermediate,Glutes
+21,female,home,Resistance Band A,Day 1,Band Pull Aparts,3,12,15,beginner,Shoulders
+21,female,home,Resistance Band A,Day 2,Band Row,3,12,15,intermediate,Back
+21,female,home,Resistance Band A,Day 2,Overhead Band Press,3,12,15,intermediate,Shoulders
+21,female,home,Resistance Band A,Day 2,Band Bicep Curls,3,12,15,beginner,Biceps
+21,female,home,Resistance Band A,Day 2,Band Triceps Extension,3,12,15,beginner,Triceps
+22,female,street,Outdoor Bodyweight A,Day 1,Squats,3,12,15,beginner,Quads
+22,female,street,Outdoor Bodyweight A,Day 1,Bench Dips,3,10,12,beginner,Triceps
+22,female,street,Outdoor Bodyweight A,Day 1,Lunges,3,12,15,beginner,Quads
+22,female,street,Outdoor Bodyweight A,Day 1,Sit-Ups on Bench,3,12,15,beginner,Core
+22,female,street,Outdoor Bodyweight A,Day 1,Plank,3,30,45,beginner,Core
+23,female,street,Cardio Strength A,Day 1,Jogging in Place,4,30,30,intermediate,Cardio
+23,female,street,Cardio Strength A,Day 1,Squats,4,30,30,intermediate,Quads
+23,female,street,Cardio Strength A,Day 1,Jumping Jacks,4,30,30,intermediate,Cardio
+23,female,street,Cardio Strength A,Day 1,Lunges,4,30,30,intermediate,Quads
+23,female,street,Cardio Strength A,Day 1,High Knees,4,30,30,intermediate,Cardio
+24,male,street,Statics Skills A,Day 1,L-Sit Tuck Hold,4,10,20,advanced,Core
+24,male,street,Statics Skills A,Day 1,Pull-Ups,3,8,10,intermediate,Back
+24,male,street,Statics Skills A,Day 1,Plank,3,45,60,beginner,Core
+24,male,street,Statics Skills A,Day 2,Front Lever Tuck,4,10,20,advanced,Back
+24,male,street,Statics Skills A,Day 2,Australian Pull-Ups,3,10,12,intermediate,Back
+24,male,street,Statics Skills A,Day 2,Superman,3,12,15,beginner,Back
+25,male,street,Streetlifting A,Day 1,Weighted Pull-Ups,4,5,8,advanced,Back
+25,male,street,Streetlifting A,Day 1,Weighted Dips,4,5,8,advanced,Chest
+25,male,street,Streetlifting A,Day 1,Weighted Squats Backpack,4,5,8,intermediate,Quads
+25,male,street,Streetlifting A,Day 1,Romanian Deadlift with Weight,3,8,10,intermediate,Hamstrings
+26,male,street,Pyramid Training A,Day 1,Pull-Ups Pyramid,1,1,5,advanced,Back
+26,male,street,Pyramid Training A,Day 1,Dips to Failure,3,max,max,intermediate,Chest
+27,female,street,Step Bench A,Day 1,Step-Ups Forward,3,12,16,beginner,Quads
+27,female,street,Step Bench A,Day 1,Side Step-Ups,3,12,16,beginner,Quads
+27,female,street,Step Bench A,Day 1,Reverse Step-Ups with Leg Lift,3,12,16,beginner,Quads
+27,female,street,Step Bench A,Day 1,Calf Raises on Bench,3,15,20,beginner,Calves
+28,female,street,Light Calisthenics A,Day 1,Australian Pull-Ups,3,8,10,intermediate,Back
+28,female,street,Light Calisthenics A,Day 1,Negative Pull-Ups,3,5,8,intermediate,Back
+28,female,street,Light Calisthenics A,Day 1,Assisted Pistol Squats,3,6,10,intermediate,Quads
+28,female,street,Light Calisthenics A,Day 1,Knee Push-Ups,3,10,12,beginner,Chest
+29,male,home,Explosive Home A,Day 1,Box Jumps,4,6,8,advanced,Quads
+29,male,home,Explosive Home A,Day 1,Explosive Push-Ups,4,6,8,advanced,Chest
+29,male,home,Explosive Home A,Day 1,Broad Jumps,4,6,8,advanced,Quads
+29,male,home,Explosive Home A,Day 1,Single-Arm Dumbbell Snatch,4,6,8,advanced,Full Body
+30,female,home,Barre Workout A,Day 1,Plie Pulses,4,16,32,intermediate,Quads
+30,female,home,Barre Workout A,Day 1,Releve,4,16,32,beginner,Calves
+30,female,home,Barre Workout A,Day 1,Leg Extension Side,4,12,16,intermediate,Glutes
+30,female,home,Barre Workout A,Day 1,Plank Leg Pulses,4,12,16,intermediate,Core
