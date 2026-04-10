@@ -9,7 +9,7 @@ async function recommend(name,age,gender,experience,goal,days_per_week,location)
         location: location 
     };
 
-    const response = await fetch('/api/recommend', {
+    const response = await fetch('https://recommending-gym-exercises-api.onrender.com/recommend', {
         method: "POST",
         headers: {"Content-Type": "application/json"},
         body: JSON.stringify(userData)

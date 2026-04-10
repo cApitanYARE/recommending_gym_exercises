@@ -22,7 +22,7 @@ df_program_detail = pd.read_csv(os.path.join(ROOT_DIR, "csv/data_users_programs/
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=["https://recommending-gym-exercises.onrender.com"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
