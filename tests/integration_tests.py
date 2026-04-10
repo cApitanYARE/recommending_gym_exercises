@@ -39,7 +39,7 @@ def test_invalid_data_types():
         ("experience", 123, "experience as integer"),
         ("goal", 123, "goal as integer"),
         ("days_per_week", "three", "days_per_week as string"),
-        ("location", 123 : "location as integer")
+        ("location", 123, "location as integer")
     ]
     
     for field, invalid_value, description in invalid_cases:

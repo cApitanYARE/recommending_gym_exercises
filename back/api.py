@@ -47,7 +47,7 @@ def map_goal(goal_str) -> int:
         'strength': 2,
         'weight_loss':3
     }
-    return goal_map.get(goal_str.lower(), 1)
+    return goal_map.get(goal_str.lower(), 2)
 
 def map_location(loc_str: str) -> int:
     location_map = {

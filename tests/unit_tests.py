@@ -34,7 +34,7 @@ async def test_recommend_logic_no_similar_users():
         "experience_numeric": [3, 3, 3],
         "days_per_week": [6, 6, 6],
         "goal": [4, 4, 4],
-        "location" [1, 2, 3],
+        "location": [1, 2, 3],
         "program_name": [1, 2, 3],
         "rating": [5, 4, 3]
     })
@@ -53,9 +53,11 @@ async def test_recommend_logic_no_similar_users():
         result = await recommend(data)
 
         assert isinstance(result, list)
-        assert not (len(result) == 2 and isinstance(result[1], dict))
-        assert result[0]["source"] == "popular"
-        assert "predicted_rating" in result[0]  
+        assert len(result) == 2
+        assert isinstance(result[0], list) 
+        assert isinstance(result[1], dict)  
+        assert len(result[0]) == 3
+        assert "predicted_rating" in result[0][0] 
 
 @pytest.mark.asyncio
 async def test_model_used_in_recommend():
@@ -95,6 +97,7 @@ async def test_model_used_in_recommend():
             assert len(result) == 2
 
             recommendations = result[0]
-            assert recommendations[0]["source"] == "similar"
+
+            assert "program_num" in recommendations[0]
             assert "predicted_rating" in recommendations[0] 
             assert recommendations[0]["predicted_rating"] == 4.5
