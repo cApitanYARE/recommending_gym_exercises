@@ -21,9 +21,11 @@ The .pkl file is located in `back/model/model.pkl`.
 
 ## 3. Frontend
 #### The starting page allows the user to enter data. Here is how it looks:   
-![img/blang,png](https://github.com/cApitanYARE/recommending_gym_exercises/blob/a81db3fb48f629cb5e9615c089a80b9978adae9c/img/blank.png)
+![img/blang.png](https://github.com/cApitanYARE/recommending_gym_exercises/blob/2aea0d693d31d64e79385755cadef7d4b643faca/img/blank.png)
 #### Each field must be filled; leaving it blank is not allowed. 
-![img/fill blank.png](https://github.com/cApitanYARE/recommending_gym_exercises/blob/a81db3fb48f629cb5e9615c089a80b9978adae9c/img/fill%20blank.png)
+![img/fill blank.png](https://github.com/cApitanYARE/recommending_gym_exercises/blob/2aea0d693d31d64e79385755cadef7d4b643faca/img/fill_blank.png)
+#### Added a new field for training location: gym, home, street.
+![img/options_location.png](https://github.com/cApitanYARE/recommending_gym_exercises/blob/2aea0d693d31d64e79385755cadef7d4b643faca/img/options_location.png)
 #### After all fields are filled and the "Confirm" button is pressed, you will see this page:  
 ![img/result.png](https://github.com/cApitanYARE/recommending_gym_exercises/blob/a81db3fb48f629cb5e9615c089a80b9978adae9c/img/result.png)
 #### For more information about each program, you can click the "More Info" button. After that, you will see a page like this:  
@@ -36,4 +38,7 @@ The .pkl file is located in `back/model/model.pkl`.
 ### This will allow you to save the program.
 
 ## 4. Deploy
-# IN DEVELOPMENT
+For deploying the project, I used a free instance on Render with a 512 MB memory limit.
+
+Frontend: https://recommending-gym-exercises.onrender.com
+API (Backend): https://recommending-gym-exercises-api.onrender.com
